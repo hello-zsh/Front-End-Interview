@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-03-11 00:08:32
- * @LastEditTime: 2021-03-14 10:37:23
+ * @LastEditTime: 2021-04-07 12:43:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /Front-End-Notebook/css.md
@@ -25,3 +25,10 @@
 ```
 
 #### 2.居中
+
+#### 3.link和@import的区别
+```
+归属：link是属于html标签的，@import是css中提供的。
+加载顺序：在页面加载的时候，link会同时被加载；@import需要页面完全载入之后才加载。
+兼容性：link是html标签，无兼容性问题；而@import需要IE5以上。
+```

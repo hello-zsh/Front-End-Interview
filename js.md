@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-02-23 23:33:02
- * @LastEditTime: 2021-03-14 19:18:18
+ * @LastEditTime: 2021-04-14 09:34:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /Front-End-Notebook/js.md
@@ -44,15 +44,47 @@
 
 #### 5.fetch和HTTP的区别
 
-#### 6.typeof、instanceof的区别
+#### 6.判断变量类型的几种方式
 ```
-  typeof判断一个变量是什么类型
++ typeof
   typeof无法识别null、数组，都会识别成object
 
-  instanceof是判断一个对象是否是另一个对象的实例(object instanceof constructor)
-  
++ instanceof
+  instanceof是判断一个对象是否是另一个对象的实例(object instanceof constructor)，只有通过构造函数创建的才能检测出来,如下：
+
   const test1 = new Array(5);
   test1 instanceof Array; //true
   test1 instanceof Object; //true
 
+
++ Object.prototype.toString.call()
+返回类似"[object Number]"这样的字符串
+
 ```
+
+#### 7.堆和栈的区别
+```
+
+```
+
+#### 8.闭包
+```
+闭包：引用了另一个函数作用域中变量的函数，通常是在嵌套函数中实现的。
+作用： 可以读取函数内部的变量
+
+```
+
+#### 9.实现深度拷贝
+
+
+#### 10.script标签的defer、async属性
+```
+  + 什么都不加，浏览器读到就会立即加载并执行相应的脚本，会阻塞后续文档的加载
+  + async，异步加载脚本，加载完成之后立刻执行脚本，一般用于第三方脚本
+  + defer，异步加载脚本，并且在页面完成解析时执行脚本
+```
+
+#### 11.事件循环机制
+
+
+
